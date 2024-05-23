@@ -1,5 +1,13 @@
+import Hello from "./components/Hello";
+// component: app
 const App = () => {
-  return <h1>hello world</h1>
+  return (
+    <div>
+    <p>Greetings</p>
+    <Hello />
+    <Hello />
+    </div>
+  )
 }
 
 export default App;
