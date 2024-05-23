@@ -1,5 +1,7 @@
-const Hello = () => {
-    return <h1>hello world</h1>
+const Hello = (props) => {
+
+
+    return <h1>hello {props.name}</h1>
   }
 
 export default Hello;

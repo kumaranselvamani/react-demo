@@ -1,11 +1,19 @@
-import Hello from "./components/Hello";
-// component: app
 const App = () => {
-  return (
+  
+  const friends = [
+    {id:1,name:"kummaran",age:29},
+    {id:2,name:"selva",age:25},
+  ]
+
+   return (
     <div>
-    <p>Greetings</p>
-    <Hello />
-    <Hello />
+    <h1></h1>
+    <ul>
+      {
+      friends.map((friend) =>
+      <li key={friend.id}>{friend.name} {friend.age}</li>)
+}
+    </ul>
     </div>
   )
 }
